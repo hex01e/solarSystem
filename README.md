@@ -56,23 +56,10 @@ This repository contains a 3D visualization of the solar system, built using **R
 
 ---
 
-## How It Works 🌌
-
-The visualization utilizes **Three.js** to create a realistic solar system environment:
-- **Sun**: Central light-emitting sphere with a `PointLight` for illumination.
-- **Planets**: Created using `SphereGeometry` with textured surfaces and realistic scaling.
-- **Rings**: Saturn and Uranus have textured `RingGeometry` for added detail.
-- **Scene Background**: A cube texture of stars for a cosmic ambiance.
-- **Camera and Controls**: A `PerspectiveCamera` with `OrbitControls` allows user interaction.
-
----
-
 ## Screenshots 📸
 Add screenshots of the project here to showcase the visualization.
 
-![Screenshot 1](ScreenShots/shot_1.png)
-![Screenshot 2](ScreenShots/shot_2.png)
-![Screenshot 2](ScreenShots/shot_3.png)
+![preview](ScreenShots/preview.gif)
 
 ---
 

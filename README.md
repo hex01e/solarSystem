@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
+# Solar System Visualization with Three.js 🌍✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a 3D visualization of the solar system, built using **React** and **Three.js**. The project simulates the Sun, planets, and their orbits in an interactive and visually engaging manner.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
 
-## Expanding the ESLint configuration
+### 🌞 Realistic Solar System
+- **Planets and Sun**: Includes the Sun and all planets in the solar system with accurate scaling and texture mapping.
+- **Rings for Saturn and Uranus**: Detailed and textured rings to enhance realism.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🎥 Interactive Exploration
+- **Orbit Controls**: Rotate, zoom, and pan to explore the solar system from any perspective.
+- **Dynamic Camera**: Camera adapts to screen resizing, ensuring an optimal view.
 
-- Configure the top-level `parserOptions` property like this:
+### 🚀 Smooth Animations
+- Planetary rotation and orbital movements are animated to create a dynamic and lifelike experience.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Technology Stack 🛠️
+- **React**: For building the user interface.
+- **Three.js**: For 3D rendering and animations.
+- **CSS**: For styling.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Installation and Setup ⚙️
+
+### Prerequisites
+- Node.js and npm installed on your machine.
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hex01e/solarSystem
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd solarSystem
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open `http://localhost:5173` in your browser to view the project.
+
+---
+
+## How It Works 🌌
+
+The visualization utilizes **Three.js** to create a realistic solar system environment:
+- **Sun**: Central light-emitting sphere with a `PointLight` for illumination.
+- **Planets**: Created using `SphereGeometry` with textured surfaces and realistic scaling.
+- **Rings**: Saturn and Uranus have textured `RingGeometry` for added detail.
+- **Scene Background**: A cube texture of stars for a cosmic ambiance.
+- **Camera and Controls**: A `PerspectiveCamera` with `OrbitControls` allows user interaction.
+
+---
+
+## Screenshots 📸
+Add screenshots of the project here to showcase the visualization.
+
+![Screenshot 1](ScreenShots/shot_1.png)
+![Screenshot 2](ScreenShots/shot_2.png)
+![Screenshot 2](ScreenShots/shot_3.png)
+
+---
+
+## Future Enhancements 🚀
+- Add moons for planets like Earth, Jupiter, and Saturn.
+- Improve textures and lighting for higher realism.
+- Add user interactivity, such as displaying planet information on click.
+- Incorporate additional celestial objects like asteroids and comets.
+
+---
+
+## Acknowledgments 🙌
+- **Three.js Documentation**: For providing extensive resources on 3D rendering.
+- **NASA**: For inspiration and planetary data.
+
+---
+
+Feel free to fork this project, explore it, and contribute your ideas to make it even better!

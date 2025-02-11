@@ -57,7 +57,6 @@ This repository contains a 3D visualization of the solar system, built using **R
 ---
 
 ## Screenshots 📸
-Add screenshots of the project here to showcase the visualization.
 
 ![preview](ScreenShots/preview.gif)
 
